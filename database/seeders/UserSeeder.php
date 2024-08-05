@@ -34,9 +34,9 @@ final class UserSeeder extends Seeder
 
     private function createExampleUsers(): self
     {
-         User::factory(9)->create();
+        User::factory(9)->create();
 
-         return $this;
+        return $this;
     }
 
 }
