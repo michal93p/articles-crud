@@ -27,7 +27,7 @@ final class ArticleFactory extends Factory
         ];
     }
 
-    private function getRandomPublicationDate(): string
+    private function getRandomPublicationDate(): ?string
     {
         $publicationDateVariants = [
             null,
