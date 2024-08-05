@@ -31,7 +31,7 @@ class Article extends Model
 
     public function author(): BelongsTo
     {
-        return $this->belongsTo(User::class, ownerKey: self::AUTHOR_FOREIGN_KEY);
+        return $this->belongsTo(User::class, self::AUTHOR_FOREIGN_KEY);
     }
 
     protected function casts(): array

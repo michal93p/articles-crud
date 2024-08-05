@@ -27,8 +27,9 @@ To run the project locally, you can use a tool like XAMPP or LAMP. Additionally,
 3. Copy `.env.example` and create a new `.env` file based on it.
 4. Add a new database. The simplest solution is to use phpMyAdmin. Go to http://localhost/phpmyadmin in your browser and add a new database.
 5. Fill in the `.env` file.
-6. Run the migration and seeders: `php artisan migrate`, then: `php artisan db:seed`.
-7. Run the project using `php artisan serve`.
+6. Generate a new application key: `php artisan key:generate`
+7. Run the migration and seeders: `php artisan migrate`, then: `php artisan db:seed`.
+8. Run the project using `php artisan serve`.
 
 The admin panel is available at: `/admin`. You can find login details in the `UserSeeder.php` file.
 

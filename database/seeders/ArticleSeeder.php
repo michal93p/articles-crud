@@ -12,7 +12,9 @@ final class ArticleSeeder extends Seeder
      */
     public function run(): void
     {
-        Article::factory(40)->create();
+        Article::withoutEvents(function () {
+            Article::factory(40)->create();
+        });
     }
 
 }
