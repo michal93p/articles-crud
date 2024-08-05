@@ -20,7 +20,7 @@ final class ArticleFactory extends Factory
     public function definition(): array
     {
         return [
-            Article::TITLE_FIELD_NAME => fake()->title,
+            Article::TITLE_FIELD_NAME => fake()->sentence(2),
             Article::CONTENT_FIELD_NAME => fake()->text,
             Article::PUBLISHED_AT_FIELD_NAME => $this->getRandomPublicationDate(),
             Article::AUTHOR_FOREIGN_KEY => $this->getRandomUserId(),
